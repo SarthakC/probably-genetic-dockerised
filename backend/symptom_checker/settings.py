@@ -12,6 +12,14 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+MONGO_URL = os.getenv("MONGO_URL")
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,7 +33,7 @@ SECRET_KEY = 'u*wu1ko_jwdg#vy46=ktzf4bnirkqqvi3g%=6ltl0c__z6(_h!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["backend"]
 
 
 # Application definition
@@ -37,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'queries'
 ]
 
 MIDDLEWARE = [

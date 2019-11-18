@@ -13,9 +13,9 @@ django-rest-knox = "*"
 spacy = "*"
 scispacy = "*"
 pymongo = "*"
-python-dotenv = "*"
 dnspython = "*"
 gunicorn = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.7"

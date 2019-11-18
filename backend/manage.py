@@ -3,6 +3,13 @@
 import os
 import sys
 
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+MONGO_URL = os.getenv("MONGO_URL")
+
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'symptom_checker.settings')
