@@ -16,16 +16,14 @@ const Header = () => {
         <span className='navbar-toggler-icon'></span>
       </button>
       <div className='collapse navbar-collapse' id='navbarTogglerDemo01'>
-        <a className='navbar-brand' href='#'>
-          <FaDna />
-          Symptom Checker: Rare Diseases
-        </a>
+        <span className='navbar-brand mb0'>
+          <FaDna /> Symptom Checker: Rare Diseases
+        </span>
         <ul className='navbar-nav mr-auto mt-2 mt-lg-0'>
           <li className='nav-item active'>
-            <a className='nav-link' href='#'>
-              Home <span className='sr-only'>(current)</span>
+            <a className='nav-link' href='http://0.0.0.0:8000/admin'>
+              Admin <span className='sr-only'>(current)</span>
             </a>
-            {/* TODO change home to admin */}
           </li>
         </ul>
       </div>
