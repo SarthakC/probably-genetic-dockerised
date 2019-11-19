@@ -19,7 +19,6 @@ services:
       - '3000:3000'
     environment:
       - NODE_ENV=development
-      - DJANGO_SETTINGS_MODULE=symptom_checker.settings.development
     depends_on:
       - backend
     command: yarn start
